@@ -1,1 +1,120 @@
-<h1>Home Page</h1>
+<!-- globalization, localization -->
+<!-- ASCII - 256, a - 97, b- 98 A-65 -->
+<!-- abc ->979899 -> 10101010 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- GET, POST (body) -->
+<!-- HTML request
+    Method: GET/POST
+    URL: https://www.google.com,
+    body:{},
+    request-headers: accept: application/json, content-type: application/pdf
+    response-headers: accept: application/json, content-type: application/pdf
+    status: 
+        1xx  - information 
+        2xx  - success, 200, 201, 204
+        3xx  - redirects
+        4xx  - client errors 401, 400
+        5xx  - server errors 500,503 
+-->
+<body>
+    <form method="get" action="google.com/form">
+        <div>
+            <!-- <input type="file" /> -->
+            <!-- a password field -->
+            <!-- 'CTRL + /' toggle -->
+            <!-- <input type="password" placeholder="Password" /> -->
+        </div>
+        <div>
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" placeholder="First Name" />
+        </div>
+        <br />
+        <div>
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" placeholder="Last Name" />
+        </div>
+        <br />
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option>--Select--</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="N">Unspecified</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            <label for="male">Male</label>
+            <input checked id="male" type="radio" value="M" name="gender" />
+            <label for="female">Female</label>
+            <input id="female" type="radio" value="F" name="gender" />
+        </div>
+        <br />
+        <div>
+            Java <input type="checkbox" checked />
+            C# <input type="checkbox" />
+            Python <input type="checkbox" />
+        </div>
+        <br />
+        <div>
+            <!-- <input type="button" value="Save"/> -->
+            <input type="submit" value="Save" />
+        </div>
+    </form>
+
+    <!-- Lists: OL, UL -->
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <ol>
+        <li>
+            Java
+        </li>
+        <li>Javascript</li>
+        <li>Python</li>
+    </ol>
+
+    <table border="1" width="50%">
+        <caption>Student Information</caption>
+        <thead>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Dept</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">Joseph</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <audio controls>
+        <source src="media/audio1.ogg" />
+        Your browser doesn't support audio
+    </audio>
+    <video controls>
+        <source src="media/video1.mp4" />
+        Your browser doesn't support videos
+    </video>
+
+
+</body>
+
+</html>
