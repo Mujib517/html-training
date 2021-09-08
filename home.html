@@ -9,7 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- external styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- internal styles -->
+    <!-- <style>
+        input {
+            width: 150px;
+            height: 25px;
+            color: green;
+        }
+    </style> -->
 </head>
+<!-- Cascading style sheets -->
 <!-- GET, POST (body) -->
 <!-- HTML request
     Method: GET/POST
@@ -18,13 +29,22 @@
     request-headers: accept: application/json, content-type: application/pdf
     response-headers: accept: application/json, content-type: application/pdf
     status: 
-        1xx  - information 
+        1xx  - information 100 pending
         2xx  - success, 200, 201, 204
         3xx  - redirects
-        4xx  - client errors 401, 400
+        4xx  - client errors 401, 400, 404
         5xx  - server errors 500,503 
 -->
+
 <body>
+    <div class="child">
+        <a href="index.html">Home</a>
+        <ul>
+            <li>Java</li>
+            <li>C#</li>
+            <li>Python</li>
+        </ul>
+    </div>
     <form method="get" action="google.com/form">
         <div>
             <!-- <input type="file" /> -->
@@ -34,12 +54,13 @@
         </div>
         <div>
             <label for="fname">First Name</label>
-            <input id="fname" type="text" placeholder="First Name" />
+            <!-- inline styles -->
+            <input class="input-text" id="fname" type="text" placeholder="First Name" />
         </div>
         <br />
         <div>
             <label for="lname">Last Name</label>
-            <input id="lname" type="text" placeholder="Last Name" />
+            <input class="input-text" id="lname" type="text" placeholder="Last Name" />
         </div>
         <br />
         <div>
@@ -67,7 +88,10 @@
         <br />
         <div>
             <!-- <input type="button" value="Save"/> -->
-            <input type="submit" value="Save" />
+            <input class="btn" type="submit" value="Save" />
+            <input class="btn" type="submit" value="Save" />
+            <input class="btn" type="submit" value="Save" />
+            <input class="btn" type="submit" value="Save" />
         </div>
     </form>
 
@@ -113,8 +137,6 @@
         <source src="media/video1.mp4" />
         Your browser doesn't support videos
     </video>
-
-
 </body>
 
 </html>

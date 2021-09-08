@@ -1,0 +1,64 @@
+/* elements, id, class*/
+/* RGB 0-255, 0-255, 0-255 */
+/*hex: rgb  0-ff */
+/* binary,  */
+/* ux designer */
+/* absolute units */
+/* relative units */
+body{
+    font-family:Helvetica,Arial,sans-serif;
+    margin:0;
+    width:100%;
+    border:1px solid grey;
+    background-color:white;
+    color: #336699;
+}
+.input-text {
+    width: 150px;
+    height: 25px;
+    color: green;
+    border:0;
+    border-bottom:1px solid grey;
+}
+.btn{
+    width:100px;
+    background-color: #336699;
+    color:#1a1313;
+    border:1px solid grey;
+    border-radius: 8px;
+    padding:10px;
+}
+form{
+    border:1px solid grey;
+    /* trbl */
+    margin:10px 0 0 10px; 
+    /* margin-top:10px;
+    margin-left:10px; */
+}
+
+/* #lname{
+    width:200px;
+} */
+.child{
+    /* border:1px solid black; */
+    width:80%;
+    margin:10px;
+    padding:10px;
+}
+
+.child li{
+    list-style-type: square;
+    display: block;
+}
+
+a{
+    text-decoration:none;
+    color:#369;
+    text-transform:none;
+    font-weight:lighter;
+    font-size: 10px;
+}
+a:hover{
+    background-color:#000;
+    padding:10px;
+}
