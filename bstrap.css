@@ -1,0 +1,13 @@
+.btn-dark{
+    /* width:150px; */
+}
+/* inline width:100px, internal width:150px, external: 200px !important */
+
+.active{
+    background-color:#369 !important;
+    border:1px solid #369 !important;
+}
+.col-md-3,.col {
+    border:1px solid grey;
+    height: 130px;
+}
